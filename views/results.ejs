@@ -1,0 +1,24 @@
+<%if (data.sitesResult.length > 0) { %>
+    <br />
+    <br />
+    <br />
+    <hr>
+    <h1>Resultats</h1>
+    <hr>
+    <% data.sitesResult.forEach( (job) => { %>
+            <fieldset>
+                <legend><h3><%=job.title%> - <%=job.companyName%>&nbsp;</h3></legend>
+                <strong>Lieu :</strong> <%=job.localisation%><br />
+                <strong>Description :</strong> <%=job.description%><br />
+                <strong>Type de contrat :</strong> <%=job.contractType%> - <%=job.contractTime%><br />
+                <strong>Date de création :</strong> <%=job.dateCreation%><br />
+                <strong>Durée de l'offre :</strong> <%=job.periodeDelay%><br />
+                <br />
+                <%=job.dayOlder%> - <a href="<%=job.url%>">Voir l'offre</a><br />
+            </fieldset>
+            <br />
+    <% }); %>
+<% }else if(data.research){ %>
+    <br />
+    <strong><p style="color:red;">Aucun résultat</p></strong>
+<% } %>

@@ -1,0 +1,31 @@
+/**********/
+/** TODO **/
+/**********/
+// View
+==> ejs --> ReactJS http://blog.soat.fr/2016/04/introduction-a-lisomorphisme-avec-react-et-node-js/
+==> Afficher le résultat des sites dans des onglets séparés
+==> Permettre des tries sur des éléments du model (site sur lequel basé la recherche, trie, ancienneté...)
+==> code du département
+
+// Site/Controller
+Ajouter des recherches :
+- monster
+- indeed
+- meteojob
+- leboncoin
+
+
+/**********/
+/** Done **/
+/**********/
+// View
+Permettre de rentrer des séries différentes de mots clés
+
+// Model
+Stocker les différents sites (urlParDefaut, nom, template de parcours)
+Stocker des résultats de sites (titre, descr, cdd/cdi, dateCreat, jourAnciennete, delai, url, boite)
+
+// Controller
+Chercher en parallèle sur plusieurs sites et en parallèle par séries de mots clés
+Trier les données en correspondance avec les critères de la view
+Transmettre les données à la view pour affichage
